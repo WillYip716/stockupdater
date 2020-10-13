@@ -1,6 +1,8 @@
-//const {sendMail} = require('./reportSender');
+//const {sendMail} = require('./reportsender');
+const {getStocks} = require('./stockfinder');
 var cron = require('node-cron');
 let counter = 1;
+
 
 cron.schedule('* * * * *', () => {
     /* 
@@ -11,3 +13,5 @@ cron.schedule('* * * * *', () => {
     console.log("this is counter: " + counter);
     counter++;
 });
+
+getStocks();
