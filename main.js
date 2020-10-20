@@ -28,6 +28,8 @@ async function stockChanges(){
         
         sendMail(`Stock Reports ${now}`, "<p style='white-space:pre-wrap;'>" + output.join("\n") + "</p>");
         console.log("success");
+    },{
+        timezone:"America/Los_Angeles",
     });
     
 }
