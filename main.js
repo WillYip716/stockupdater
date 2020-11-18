@@ -6,7 +6,7 @@ async function stockChanges(){
     cron.schedule('0 14 * * 1-5', async () => {
         
         let now = new Date().toISOString().slice(0,10);
-        let list = ["pton","tsla","ual","sq"];
+        let list = ["pton","tsla","ual","sq","pltr"];
         let dataList = [];
         let output = [];
 
